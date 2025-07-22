@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vo Nghia Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <div class="container">
+      <img
+        src="/portfolio/images/IMG_4025.png"
+        alt="Profile Picture"
+        class="avatar"
+      />
+      <h1>Hi, my name is <span class="highlight">Vo Nghia</span></h1>
+      <h2 id="typing"></h2>
+
+      <div class="socials">
+        <a
+          href="https://www.linkedin.com/in/ngh%C4%A9a-v%C3%B5-a3430b337/"
+          target="_blank"
+          ><i class="fab fa-linkedin"></i
+        ></a>
+        <a href="https://github.com/kphlavonghia" target="_blank"
+          ><i class="fab fa-github"></i
+        ></a>
+      </div>
+    </div>
+
+    <!-- Script đặt ở đây để chạy sau khi DOM sẵn sàng -->
+    <script src="https://cdn.jsdelivr.net/npm/typeit@8.7.1/dist/index.umd.js"></script>
+    <script>
+      new TypeIt("#typing", {
+        speed: 80,
+        deleteSpeed: 50,
+        breakLines: false,
+        loop: true,
+      })
+        .type("I'm a C# and Javascript enthusiast")
+        .pause(1500)
+        .delete()
+        .type("I'm passionate about clean code")
+        .pause(1500)
+        .delete()
+        .type("I love building website")
+        .pause(1500)
+        .delete()
+        .go();
+    </script>
+  </body>
+</html>
